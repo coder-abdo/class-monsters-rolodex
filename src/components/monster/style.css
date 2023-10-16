@@ -1,0 +1,28 @@
+.monster {
+  display: flex;
+  place-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 10px 20px;
+  max-width: 200px;
+  width: 100%;
+  background-color: #95dada;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+.monster:is(:hover) {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.monster__image {
+  width: 100%;
+  object-fit: cover;
+}
+.monster__title {
+  font-size: 22px;
+  margin: 10px 0;
+}
+.monster__email {
+  font-size: 16px;
+}
